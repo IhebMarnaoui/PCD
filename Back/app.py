@@ -137,10 +137,6 @@ def predict():
 @app.route('/ActualValue',methods=['GET'])
 def ActualValue():
     IT_Companies=[]
-    today = date.today()
-    end=today
-    days = datetime.timedelta(200) 
-    start=today-days
     IT_Companies=getData(start, end)
     L=[]
     for i in range(len(IT_Companies)):
