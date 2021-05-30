@@ -1,0 +1,72 @@
+{
+  "name": "stock-price-predictions",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@progress/kendo-data-query": "^1.5.5",
+    "@progress/kendo-drawing": "^1.10.1",
+    "@progress/kendo-licensing": "^1.1.4",
+    "@progress/kendo-react-animation": "^4.6.0",
+    "@progress/kendo-react-data-tools": "^4.6.0",
+    "@progress/kendo-react-dateinputs": "^4.6.0",
+    "@progress/kendo-react-dropdowns": "^4.6.0",
+    "@progress/kendo-react-grid": "^4.6.0",
+    "@progress/kendo-react-inputs": "^4.6.0",
+    "@progress/kendo-react-intl": "^4.6.0",
+    "@progress/kendo-react-treeview": "^4.6.0",
+    "@progress/kendo-theme-default": "^4.38.1",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "apexcharts": "^3.26.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "fusioncharts": "^3.17.0",
+    "google-maps-react": "^2.0.6",
+    "mdbreact": "^5.0.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-bootstrap-icons": "^1.5.0",
+    "react-dom": "^17.0.2",
+    "react-financial-charts": "^1.2.2",
+    "react-fusioncharts": "^3.1.2",
+    "react-responsive-carousel": "^3.2.18",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-simple-maps": "^2.3.0",
+    "react-slider-wrapper": "^1.0.29",
+    "react-social-icons": "^5.3.0",
+    "react-social-media-buttons": "^1.0.8",
+    "recharts": "^2.0.9",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
