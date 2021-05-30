@@ -8,11 +8,14 @@ from flask import Flask, jsonify
 import numpy as np
 import tensorflow as tf
 import pandas_datareader.data as web
+from flask_cors import CORS
 from datetime import date
 import datetime
 import pickle
 
 app = Flask(__name__)
+
+CORS(app)
 
 def getData(start, end):
   IT_Companies=[]
