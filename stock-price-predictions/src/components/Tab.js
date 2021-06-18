@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "@progress/kendo-theme-default/dist/all.css";
-// import { Grid, GridCellProps, GridColumn } from "@progress/kendo-react-grid";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { makeStyles } from "@material-ui/core/styles";
@@ -11,6 +10,8 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import Header from "./Header";
+import Contact from "./Contact";
 
 function Tab() {
      const [Actual, getActual] = useState([]);
@@ -20,9 +21,9 @@ function Tab() {
           axios.get("http://127.0.0.1:5000/ActualValue").then((res) =>
                getActual(res.data)
           );
-          axios.get("http://127.0.0.1:5000/predict").then((res) =>
+          axios.get("http://127.0.0.1:5000/predict").then((res) =>{
                getPrediction(res.data)
-          );
+          } );
      }, []);
      const useStyles = makeStyles({
           table: {
@@ -37,73 +38,57 @@ function Tab() {
                symbol: "AAPL",
                name: "Apple Inc",
                actualValue: Actual[0],
-               prediction: prediction.AAPL,
+               prediction: prediction["AAPL"],
           },
           {
                symbol: "FB",
                name: "Facebook Inc",
                actualValue: Actual[1],
-               prediction: prediction.FB,
+               prediction: prediction["FB"],
           },
           {
                symbol: "MSFT",
                name: "'Microsoft Corporation'",
                actualValue: Actual[2],
-               prediction: prediction.MSFT,
+               prediction: prediction["MSFT"],
           },
           {
                symbol: "HPQ",
                name: "HP Inc",
                actualValue: Actual[3],
-               prediction: prediction.HPQ,
+               prediction: prediction["HPQ"],
           },
           {
                symbol: "CSCO",
                name: "Cisco Systems Inc",
                actualValue: Actual[4],
-               prediction: prediction.CSCO,
+               prediction: prediction["CSCO"],
           },
           {
                symbol: "ADM",
                name: "Advanced Micro Devices Inc",
                actualValue: Actual[5],
-               prediction: prediction.ADM,
+               prediction: prediction["ADM"],
           },
           {
                symbol: "IBM",
                name: "IBM Common",
                actualValue: Actual[6],
-               prediction: prediction.IBM,
+               prediction: prediction["IBM"],
           },
           {
                symbol: "QCOM",
                name: "QUALCOMM Inc",
                actualValue: Actual[7],
-               prediction: prediction.QCOM,
+               prediction: prediction["QCOM"],
           },
      ];
 
-     function createData(name, calories, fat, carbs, protein) {
-          return { name, calories, fat, carbs };
-     }
+
 
      return (
-          // <Grid data={Companies} style={{ height: 700 }}>
-          //      <Link to={"forcasts/"}>
-          //           <GridColumn
-          //                title="Symbol"
-          //                field="symbol"
-          //                locked={true}
-          //                width={100}
-          //           />
-          //           <GridColumn title="Name" field="name" />
-          //           <GridColumn title="Actual Value" field="Actual Value" />
-          //           <GridColumn
-          //                title="Prediction"
-          //                field="prediction" /*cell={ChangeCell}*/
-          //           />
-          //      </Link>
-          // </Grid>
+          <>
+          <Header />
           <TableContainer component={Paper}>
                <Table className={classes.table} aria-label="simple table">
                     <TableHead>
@@ -129,13 +114,15 @@ function Tab() {
                                         {row.actualValue}
                                    </TableCell>
                                    <TableCell align="left">
-                                        {row.predictions}
+                                        {row.prediction}
                                    </TableCell>
                               </TableRow>
                          ))}
                     </TableBody>
                </Table>
           </TableContainer>
+          <Contact />
+          </>
      );
 }
 

@@ -1,12 +1,13 @@
 .footer {
     background-color: #414141;
+    background-image: url("D:\PCD\stock-price-predictions\src\Images\6.png");
     width: 100%;
     text-align: left;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 16px;
     padding: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
   
   .footer .footer-left,

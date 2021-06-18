@@ -8,8 +8,8 @@ function Header() {
     return (
         <Container >
         <Navbar >
-        <Navbar.Brand variant="outline-info" href="#home">
-        <Link to="/" >
+        <Navbar.Brand variant="outline-info" >
+        <Link to="/Home" >
           <img
             alt=""
             src={logo}
@@ -20,13 +20,12 @@ function Header() {
           Stock Price Predictions
         </Navbar.Brand>
         <Nav className="mr-auto" ></Nav>
-        <Link to="/" >
+        <Link to="/Home" >
         <Button variant="outline-info" className="mr-sm-2">Home</Button>
         </Link>
         <Link to="/forecasts" >
         <Button variant="outline-info" className="mr-sm-2">Forecasts</Button>
         </Link>
-        <Button variant="outline-info" className="mr-sm-2">About</Button>
 
           {[ 'Info'].map(
         (variant) => (
@@ -37,8 +36,9 @@ function Header() {
           variant={variant.toLowerCase()}
           title={variant}
         >
-          <Dropdown.Item eventKey="1">Log in</Dropdown.Item>
-          <Dropdown.Item eventKey="2">Sign up</Dropdown.Item>
+          <Dropdown.Item eventKey="1" disabled>Logged in</Dropdown.Item>
+          <Dropdown.Item tag={Link} href="/" eventKey="2" >Log out</Dropdown.Item>
+        
 
         </DropdownButton>
       ),

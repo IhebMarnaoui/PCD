@@ -1,5 +1,5 @@
 import React from "react";
-import { CardDeck, Card, Container } from "react-bootstrap";
+import { CardDeck, Card} from "react-bootstrap";
 import Nesrine from "../Images/Nesrine.jpg";
 import Iheb from "../Images/Iheb.jpg";
 import Wael from "../Images/Wael.jpg";
@@ -29,9 +29,9 @@ function Team() {
               <Card.Title>Jouini Nesrine</Card.Title>
 
               <Card.Text>Software Engineer</Card.Text>
-              <SocialIcon url="https://www.facebook.com" />
+              <SocialIcon url="https://www.facebook.com/nesrine098" target ="_blank"/>
               <span style={{ marginLeft: "30px" }}></span>
-              <SocialIcon url="https://linkedin.com/in/jaketrent" />
+              <SocialIcon url="https://www.linkedin.com/in/nesrine-jouini/" target ="_blank"/>
             </center>
           </Card.Body>
         </Card>
@@ -41,9 +41,9 @@ function Team() {
             <center>
               <Card.Title>Marnaoui Iheb</Card.Title>
               <Card.Text>Software Engineer And Financial Expert</Card.Text>
-              <SocialIcon url="https://www.facebook.com" />
+              <SocialIcon url="https://www.facebook.com/ihebmarr/" target ="_blank"/>
               <span style={{ marginLeft: "30px" }}></span>
-              <SocialIcon url="https://linkedin.com/in/jaketrent" />
+              <SocialIcon url="https://www.linkedin.com/in/ihebmarnaoui/" target ="_blank"/>
             </center>
           </Card.Body>
         </Card>
@@ -53,9 +53,9 @@ function Team() {
             <center>
               <Card.Title>Khemakhem Wael</Card.Title>
               <Card.Text>Software Engineer</Card.Text>
-              <SocialIcon url="https://www.facebook.com" />
+              <SocialIcon url="https://www.facebook.com/waelkh544" target ="_blank"/>
               <span style={{ marginLeft: "30px" }}></span>
-              <SocialIcon url="https://linkedin.com/in/jaketrent" />
+              <SocialIcon url="https://www.linkedin.com/in/wael-khemakhem-8973a8164/" target ="_blank"/>
             </center>
           </Card.Body>
         </Card>
